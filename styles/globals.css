@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -14,3 +18,69 @@ a {
 * {
   box-sizing: border-box;
 }
+:root{
+
+  --main-color: #0e46af;
+
+}
+
+.intro-carrusel{
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel .slide img {
+  width: 100%;
+  vertical-align: top;
+  border: 0;
+  max-height: 500px;
+  min-height: 400px;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.4);
+}
+.banners-portada .item-banner {
+  background: var(--main-color);
+  max-width: 130px;
+  padding: 1.2em;
+  border-radius: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.banners-portada .group.relative h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+.banners-portada .group.relative p {
+  font-size: 20px;
+}
+
+.banners-portada {
+  text-align: center;
+}
+
+.banners-portada .group.relative h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.banners-portada .group.relative p {
+  font-size: 20px;
+}
+
